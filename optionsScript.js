@@ -1,0 +1,1 @@
+// Allow the user to add options and save those to localstorage
