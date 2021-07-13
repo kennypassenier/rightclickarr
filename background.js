@@ -5,13 +5,18 @@ chrome.runtime.onInstalled.addListener(() => {
     options: [
       {
         id: "1",
-        name: "movies",
+        name: "Add to movies",
         url: "http://localhost:7878/add/new?newItem="
       },
       {
         id: "2",
-        name: "TV series",
+        name: "Add to TV series",
         url: "http://localhost:8989/add/new?newItem="
+      }, 
+      {
+        id: "3",
+        name: "Search Youtube", 
+        url: "https://www.youtube.com/results?search_query="
       }
     ],
   });
@@ -77,7 +82,7 @@ function createContextItems(){
     for(let option of data.options){
       const obj = {
         id: option.id,
-        title: "Add to " + option.name,
+        title: option.name,
         contexts: ["selection"],
       }
       chrome.contextMenus.create(obj);  
