@@ -2,10 +2,9 @@
   "name": "Rightclickarr",
   "description": "Offers new actions for selected text",
   "manifest_version": 3,
-  "version": "0.1.0",
+  "version": "0.4.0",
   "permissions": [
-    "activeTab",
-    "contextMenus",
+  "contextMenus",
     "storage"
   ],
   "host_permissions": [
